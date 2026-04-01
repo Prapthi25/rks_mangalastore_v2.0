@@ -425,10 +425,11 @@ const CATALOGUE = {
 } as const;
 
 type CategoryKey = keyof typeof CATALOGUE;
+type CatalogProduct = (typeof CATALOGUE)[CategoryKey]["products"][number] & { _cat?: CategoryKey };
 
 // ─── PRODUCT CARD ────────────────────────────────────────────────────────────
 
-function ProductCard({ product, index }: { product: (typeof CATALOGUE.Beds.products)[0]; index: number }) {
+function ProductCard({ product, index }: { product: CatalogProduct; index: number }) {
   const img = PRODUCT_IMAGES[product.name] ?? "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80";
   const [imgLoaded, setImgLoaded] = useState(false);
 
