@@ -101,7 +101,7 @@ const TESTIMONIALS = [
 ];
 
 const STATS = [
-  { value: "20+", label: "Years of Excellence" },
+  { value: "32+", label: "Years of Excellence" },
   { value: "10K+", label: "Happy Customers" },
   { value: "100+", label: "Premium Brands" },
   { value: "500+", label: "Products" },
@@ -451,7 +451,7 @@ function WhyUsSection() {
   };
 
   const points = [
-    { icon: "🏆", title: "20+ Years of Trust", desc: "Two decades serving families across Kushalnagar, Hassan & surrounding regions." },
+    { icon: "🏆", title: "32+ Years of Trust", desc: "Two decades serving families across Kushalnagar, Hassan & surrounding regions." },
     { icon: "🛡️", title: "Warranty Assured", desc: "Every product backed by manufacturer warranty and our service promise." },
     { icon: "🚚", title: "Home Delivery", desc: "Free delivery and professional installation across the region." },
     { icon: "💎", title: "Premium Quality", desc: "Curated selection of international and Indian premium furniture brands." },
