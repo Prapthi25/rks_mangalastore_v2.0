@@ -303,7 +303,7 @@ function HeroSection() {
           </h1>
 
           <p className="text-white/70 text-lg sm:text-xl max-w-lg mx-auto lg:mx-0 mb-10 leading-relaxed">
-            Over 20 years of crafting extraordinary living spaces. Premium
+            Over 32 years of crafting extraordinary living spaces. Premium
             mattresses, ergonomic office chairs, and bespoke home furniture —
             all under one roof.
           </p>
@@ -606,6 +606,10 @@ function ContactSection() {
     setTimeout(() => setSubmitted(false), 4000);
   };
 
+
+  const MAPS_LINK =
+    "https://www.google.com/maps/search/?api=1&query=Mangala+Stores+and+Furnitures,+Hassan+Road,+Kushalnagar,+Karnataka+571234";
+
   return (
     <section id="contact" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -619,6 +623,8 @@ function ContactSection() {
             </p>
 
             <div className="space-y-6">
+
+              {/* ── Address ── */}
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-2xl bg-[#f8f5f0] flex items-center justify-center text-xl flex-shrink-0">📍</div>
                 <div>
@@ -630,9 +636,54 @@ function ContactSection() {
                     Maruthi Circle, Hassan Road<br />
                     Kushalnagar – 571234
                   </p>
+
+                  {/* ── Directions button ── */}
+                  <a
+                    href={MAPS_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 mt-3 px-4 py-2 rounded-xl
+                               bg-[#c9a96e] hover:bg-[#b8943a] text-white text-xs font-semibold
+                               tracking-wide transition-all duration-200 hover:shadow-lg hover:shadow-[#c9a96e]/30
+                               hover:-translate-y-0.5 no-underline"
+                  >
+                    {/* Map-pin icon */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="13"
+                      height="13"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                      <circle cx="12" cy="9" r="2.5" />
+                    </svg>
+                    Get Directions
+                    {/* External-link arrow */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="11"
+                      height="11"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      <polyline points="15 3 21 3 21 9" />
+                      <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                  </a>
                 </div>
               </div>
 
+              {/* ── Phone ── */}
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-2xl bg-[#f8f5f0] flex items-center justify-center text-xl flex-shrink-0">📞</div>
                 <div>
@@ -648,14 +699,16 @@ function ContactSection() {
                 </div>
               </div>
 
+              {/* ── Timings ── */}
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-2xl bg-[#f8f5f0] flex items-center justify-center text-xl flex-shrink-0">🕐</div>
                 <div>
                   <p className="text-gray-400 text-xs font-semibold uppercase tracking-wider mb-1">Timings</p>
-                  <p className="text-[#1a1a1a] font-medium">Mon–Sat: 10:00 AM – 8:00 PM</p>
+                  <p className="text-[#1a1a1a] font-medium">Mon–Sat: 9:30 AM to 8:00 PM</p>
                 </div>
               </div>
 
+              {/* ── Email ── */}
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-2xl bg-[#f8f5f0] flex items-center justify-center text-xl flex-shrink-0">📧</div>
                 <div>
